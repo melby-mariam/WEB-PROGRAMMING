@@ -6,7 +6,7 @@
     <title>Document</title>
 </head>
 <body>
-    <table border="1" cellpadding="25">
+    <table border="1" cellpadding="20">
 
         <tr>
             <td>Name</td>
@@ -22,15 +22,115 @@
             <td>Checkbox</td>
             <form action="">
             <td>
-                <input type="checkbox" name="hobbies" value="tv" checked="checked">tv <br> 
-                <input type="checkbox" name="hobbies" value="gardening">gardening
+                <input type="checkbox" name="hobbies" value="tv" checked="checked">Tv <br> 
+                <input type="checkbox" name="hobbies" value="gardening">Gardening
             </td>
-
+            <tr>
+            <td>Radio</td>
             <td>
-                <input type="radio" name="gender" value="female" checked="checked">female <br> 
-                <input type="radio" name="gender" value="male">male
+                <input type="radio" name="gender" value="female" checked="checked"/>Female <br> 
+                <input type="radio" name="gender" value="male"/>Male
             </td>
+        </tr>
             
+            <tr>
+                <td>Select</td>
+                <td>
+                <Select name="groceries" size="0">
+                    <option value="">Milk</option>
+                    <option value="">Bread</option>
+                    <option value="">Eggs</option>
+                </Select>
+            </td>
+            </tr>
+            <tr>
+                <td>Text Area</td>
+                <td>
+                    Address:<textarea name="message" rows="5" cols="50" id="">Enter your message here!!</textarea>
+                </td>
+            </tr>
+
+           
+            <tr>
+                <td>Button</td>
+                <td>
+                    <input type="button" value="My button"/>
+    
+                </td>
+            </tr>
+
+            <tr>
+                <td>Color</td>
+                <td><input type="color"/></td>
+            </tr>
+
+            <tr>
+                <td>Date</td>
+                <td><input type="date" required/></td>
+            </tr>
+
+            <tr>
+                <td>Date Time</td>
+                <td><input type="datetime-local"/></td>
+            </tr>
+
+            <tr>
+                <td>Telephone</td>
+                <td><input type="tel" autofocus></td>
+            </tr>
+
+            <tr>
+                <td>URL</td>
+                <td><input type="url" required></td>
+            </tr>
+
+            <tr>
+                <td>Time</td>
+                <td><input type="time"></td>
+            </tr>
+
+            <tr>
+                <td>Email</td>
+                <td><input type="email" placeholder="email"></td>
+            </tr>
+
+            <tr>
+                <td>Week</td>
+                <td><input type="week"></td>
+            </tr>
+            
+            <tr></tr>
+            <td>Month</td>
+            <td><input type="month"></td>
+            <tr>
+                <td>Number</td>
+                <td><input type="number"></td>
+            </tr>
+            <tr>
+                <td>Range</td>
+                <td><input type="range"></td>
+            </tr>
+
+            <tr>
+                <td>File</td>
+                <td><input type="file" required=""></td>
+            </tr>
+
+            <tr>
+            <td>Placeholder</td>
+            <td><input type="name" placeholder="Full Name"></td></tr>
+            
+
+            <tr>
+                <td>Datalist</td>
+                <td><datalist type=""></datalist></td>
+            </tr>
+            <tr>
+                <td>Submit and Reset Button</td>
+                <td><input type="submit" value="Submit Form"/>&nbsp;&nbsp;
+                <input type="Reset" value="Clear"/></td>
+            </tr>
+
             </form>
         </tr>
     </table>
