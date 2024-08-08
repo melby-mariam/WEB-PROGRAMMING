@@ -1,0 +1,16 @@
+audio- audio information is coded into encoding
+convert to digital form
+vorbis-Ogg container
+mp3-mp3
+wav-wav
+
+pyq
+mime
+while response rendering-mime is used (from server to give response)
+display content format
+
+wav-uncompressed audio
+mp3-compressed audio
+
+pyq
+audio tag with controls
