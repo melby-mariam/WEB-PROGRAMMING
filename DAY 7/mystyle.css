@@ -1,0 +1,21 @@
+h1{
+    font-family: sans-serif;
+    color: goldenrod
+}
+
+b{
+    color: blue;
+}
+
+p{
+    font-weight: bold;
+}
+
+ul{
+    color: blueviolet;
+}
+
+body{
+    color: green;
+    margin-left: 20px;
+}

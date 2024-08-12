@@ -1,0 +1,19 @@
+Syntax of style rule
+Selector{property 1:value 1;property 2:value 2;...}
+h1 {font-size:12pt;color:red}
+-should be separated by semicolon
+
+order of precedence
+-inline style sheet
+-embedded style sheet
+-external style sheet
+-browser default
+
+Inline style
+    Style="property0:value0;property1:value1;
+
+External style sheet    
+    <link href=URL rel="relation_type="link_type">
+
+--conflicting resolution
+    owner has precedence over the users preference style.
