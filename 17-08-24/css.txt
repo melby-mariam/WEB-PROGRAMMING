@@ -1,3 +1,17 @@
 div tag is a block tag
 span tag is an inline tag
 
+Box Model
+- Margin,border and padding
+- Margin => The area outside the border.
+            Margin is transparent.
+- Padding => amount of space between content of an element and its border.
+- __________________
+    Margin
+  __________________
+  border
+  __________________
+  padding
+  __________________
+  content
+  __________________
