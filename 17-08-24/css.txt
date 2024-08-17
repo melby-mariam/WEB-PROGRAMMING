@@ -1,0 +1,3 @@
+div tag is a block tag
+span tag is an inline tag
+
