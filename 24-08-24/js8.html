@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var name;
+        var now = new Date();
+        var hour = now.getHours();
+        alert(hour);
+        name=window.prompt("Please enter your name");
+        if (hour < 12)
+    {
+        greet = 'Good Morning';
+    }
+    else if(hour >= 12 && hour <= 17)
+    {
+        greet = 'Good Afternoon';
+    }
+    else if(hour >= 17 && hour <= 24)
+    {
+        greet = 'Good Evening';
+        // document.writeln(greet + " " + name +" ", welcome to javascipt programing);
+    }
+    </script>
+</body>
+</html>
