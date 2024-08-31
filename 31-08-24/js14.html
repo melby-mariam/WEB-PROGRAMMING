@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function printme(){
+            num=document.getElementById("num").value
+            Num=parseInt(num)
+            if(isNaN(Num)){
+                alert("The value entered is not  number")
+            }
+            else {
+                alert("The value entered is a number")
+                
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="text" id="num">
+    <input type="button" name="button" value="Print Me" onclick="printme()">
+</body>
+</html>
