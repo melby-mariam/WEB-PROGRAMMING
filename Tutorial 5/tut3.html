@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Gross Pay Calculation</title>
+
+    <script>
+        var grossPays = []; // Array to store gross pay for each employee
+
+        for (var i = 1; i <= 3; i++) {
+            employeeName = prompt(`Enter the name of Employee ${i}:`, '');
+            hoursWorked = parseInt(prompt(`Enter the hours worked by ${employeeName}:`, ''));
+            hourlyRate = parseInt(prompt(`Enter the hourly rate for ${employeeName}:`, ''));
+
+            // Validate input to ensure numerical values are entered
+            if (isNaN(hoursWorked) || isNaN(hourlyRate)) {
+                alert("Please enter numerical values for hours and rate!");
+                i--; // Decrement loop counter to retry input for the current employee
+                continue;
+            }
+
+            // Calculate gross pay
+
+            if (hoursWorked <= 40) {
+                grossPay = hoursWorked * hourlyRate;
+            } else {
+                let regularPay = 40 * hourlyRate;
+                let overtimeHours = hoursWorked - 40;
+                let overtimePay = overtimeHours * hourlyRate * 1.5;
+                grossPay = regularPay + overtimePay;
+            }
+
+
+            grossPays.push(grossPay); // Store gross pay in array
+        }
+
+        // Display the gross pay for each employee
+        alert(`Gross Pay of Employee 1: ${grossPays[0]}\nGross Pay of Employee 2: ${grossPays[1]}\nGross Pay of Employee 3: ${grossPays[2]}`);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

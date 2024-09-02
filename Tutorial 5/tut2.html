@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TUT5-Q2</title>
+
+    <script>
+        function checkpalindrome(){
+            n = prompt("Enter a five digit number : ")
+
+            if(n.length!=5){
+                alert("The given number is not a five digit number")
+                checkpalindrome()
+            }
+
+            len = n.length
+            for(var i=0,j=len-1;i<len/2 && j>len/2;i++,j--){
+                if(n[i]!=n[j]){
+                    alert("The number is not palindrome.")
+                    return
+                }
+            }
+            alert("The number is palindrome.")
+        }
+        checkpalindrome()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
