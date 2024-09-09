@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body> 
+    <!-- Not in exam point this part -->
+    <form>
+        <fieldset>
+            <legend>Links-Collection-length</legend>
+            <a href="https://www.google.com">Google</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.bing.com">Bing</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.ebay.com">E-bay</a>&nbsp;&nbsp;&nbsp;
+            <a href="https://www.sjcetpalai.ac.in">SJCET</a> <br><br>
+
+            <input type="button" value="Get Links" onclick="getLinks()">
+            <div id="divDisplay"></div>
+        </fieldset>
+    </form>
+
+    <script>
+        var divDisplay = document.getElementById("divDisplay");
+        function getLinks() {
+            var links = document.links.length;
+            divDisplay.textContent = 'Total Links: '+links; // textcontent is same as innerhtml
+            for(var i =0; i<links; i++){
+                divDisplay.textContent += '--> '+document.links[i]+' '
+            }
+            alert(links);
+        }
+    </script>
+</body>
+</html>
