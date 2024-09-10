@@ -23,12 +23,17 @@
     <script>
         var divDisplay = document.getElementById("divDisplay");
         function getLinks() {
+            const linksCollection = document.links;
             var links = document.links.length;
-            divDisplay.textContent = 'Total Links: '+links; // textcontent is same as innerhtml
-            for(var i =0; i<links; i++){
-                divDisplay.textContent += '--> '+document.links[i]+' '
-            }
-            alert(links);
+            divDisplay.innerHTML = 'Total Links: '+links + '<br>';
+            for (let i=0; i<linksCollection.length; i++){
+                divDisplay.innerHTML += "Link URL: " + linksCollection[i].href + '<br>';
+                divDisplay.innerHTML += "Link Text: " + linksCollection[i].textContent + '<br>';
+            } // textcontent is same as innerhtml
+            // for(var i =0; i<links; i++){
+            //     divDisplay.textContent += '--> '+document.links[i]+' ';
+            // }
+            // alert(links);
         }
     </script>
 </body>
