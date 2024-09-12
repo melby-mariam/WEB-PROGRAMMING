@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 1px;
+    }
+    .topnav{
+        background-color: #333;
+        overflow: hidden;
+        /* height: 200px;
+        width: 50px; */
+    }
+    .topnav a{
+        float: left;
+        background-color: #04aa6d;
+        color: white;
+    }
+    .middle{
+        padding: 20px;
+    }
+    .gallery{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+
+    }
+    .gallery img{
+        width: 100%;
+        max-width: 300px;
+        margin: 10px;
+    }
+    .footer{
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+
+    }
+    .footer a{
+        color: white;
+        text-decoration: none;
+    }
+    .footer a:hover{
+        color: #04aa6d;
+    }
+
+    @media (min-width:768px){
+        .topnav{
+            float: none;
+            display: inline;
+        }
+
+        .gallery img{
+            max-width: 200px;
+        }
+
+        @media (max-width:480px)
+        {
+            .topnav a{
+                float: none;
+                display: block;
+                text-align: left;
+            }
+
+            .gallery img{
+
+            }
+        }
+
+    }
+</style>
+<body>
+    <div class="topnav">
+        <a href="#" class="active">Home</a> 
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+    </div>
+
+    <div class="middle">
+        <h1>Welcome to My Responsive Webpage </h1>
+        <p>This is  a sample responsive webpage using media queries to adjust for different screen sizes and orientations</p>
+
+        <div class="gallery">
+            <img src="image.png" alt="Image 1">
+            <img src="image.png" alt="Image 2">
+            <img src="image.png" alt="Image 3">
+
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>
+            <a href="">Privacy Policy</a>
+            <a href="">Terms of service</a>
+            <br>&copy;SmithSJCET
+        </p>
+    </div>
+</body>
+</html>
