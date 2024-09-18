@@ -1,0 +1,5 @@
+Tutorial 6
+
+Question 1 : https://melby-mariam.github.io/WEB-PROGRAMMING/Tutorial%206/tut6-1.html
+Question 2 : https://melby-mariam.github.io/WEB-PROGRAMMING/Tutorial%206/tut6-2.html
+Question 3 : https://melby-mariam.github.io/WEB-PROGRAMMING/Tutorial%206/reg.html
