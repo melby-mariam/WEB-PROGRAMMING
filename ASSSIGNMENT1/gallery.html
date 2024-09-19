@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Gallery - Melby Mariam Chandy</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #35424a;
+            color: #fff;
+            padding: 20px;
+            border-bottom: 3px solid #e8491d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        header a.current {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        .gallery {
+            padding: 50px 0;
+        }
+        .gallery h2 {
+            text-align: center;
+            color: #35424a;
+        }
+        .gallery-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            
+        }
+        .gallery img {
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            width: 100%;
+            max-width: 300px;
+            margin: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+     
+    
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color: #e8491d;">Melby</span> Mariam Chandy</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="gallery.html" class="current">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="gallery">
+        <h2>My Gallery</h2> 
+        <div class="gallery-content">
+            <img src="myimg.jpg" alt="profile_image">
+            <img src="myimg3.jpg" alt="Image 3">
+            <img src="myimg2.jpg" alt="Image 2">
+            
+            <!-- Add more images here -->
+        </div>
+    </section>
+</body>
+</html>

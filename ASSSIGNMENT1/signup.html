@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Melby Mariam Chandy</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #35424a;
+            color: #fff;
+            padding: 20px;
+            border-bottom: 3px solid #e8491d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        header a.current {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        form label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        form input, form textarea, form select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        form button {
+            background-color: #e8491d;
+            color: #fff;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        form button:hover {
+            background-color: #35424a;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1><span style="color: #e8491d;">Melby</span> Mariam Chandy</h1>
+        </div>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html" class="current">Sign Up</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h2>Sign Up</h2>
+        <form action="#" method="post">
+            <label for="fname">First Name:</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your first name" required>
+
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Your email" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Your password" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label>Gender:</label>
+            <input type="radio" id="male" name="gender" value="male" required> Male
+            <input type="radio" id="female" name="gender" value="female"> Female
+            <input type="radio" id="other" name="gender" value="other"> Other
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Your phone number" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" placeholder="Your address" required></textarea>
+
+            <label for="city">City:</label>
+            <input type="text" id="city" name="city" placeholder="Your city" required>
+
+            <label for="state">State:</label>
+            <input type="text" id="state" name="state" placeholder="Your state" required>
+
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country" placeholder="Your country" required>
+
+            <label for="hobbies">Hobbies:</label>
+            <input type="text" id="hobbies" name="hobbies" placeholder="Your hobbies" required>
+
+            <label for="occupation">Occupation:</label>
+            <input type="text" id="occupation" name="occupation" placeholder="Your occupation" required>
+
+            <label for="bio">Short Bio:</label>
+            <textarea id="bio" name="bio" placeholder="Tell us about yourself" required></textarea>
+
+            <button type="submit">Sign Up</button>
+        </form>
+    </div>
+</body>
+</html>

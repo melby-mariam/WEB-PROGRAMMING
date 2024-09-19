@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Melby Mariam Chandy</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family:'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #35424a;
+            color: #fff;
+            padding: 20px;
+            border-bottom: 3px solid #e8491d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        header a.current {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        .contact {
+            padding: 50px 0;
+        }
+        .contact h2 {
+            text-align: center;
+            color: #35424a;
+            text-transform: uppercase;
+            margin-bottom: 40px;
+        }
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .box {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #e8491d;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .contact-info h3, .contact-info p {
+            margin: 0;
+        }
+        .contact-info {
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color: #e8491d;">Melby</span> Mariam Chandy</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html" class="current">Contact</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <div class="box">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="8" id="comment" placeholder="Message"></textarea>
+                    </div>
+                    <a class="btn" href="#" role="button">Submit</a>
+                </form>
+            </div>
+            <div class="box">
+                <div class="contact-info">
+                    <h3>Melby Mariam</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Phone</h3>
+                    <p>8606286255</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>mariammelby@gmail.com</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Website</h3>
+                    <p><a href="https://melby-mariam-portfolio.netlify.app/">melbywebsite.com</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

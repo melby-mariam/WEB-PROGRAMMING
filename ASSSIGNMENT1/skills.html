@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #35424a;
+            color: #fff;
+            padding: 20px;
+            border-bottom: 3px solid #e8491d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        header a.current {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        .skills {
+            padding: 50px 0 80px;
+        }
+        .skills h2 {
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5ebf2;
+            text-align: center;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .col-md-6 {
+            flex: 1;
+            max-width: 50%;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        .progress-container {
+            margin-bottom: 30px;
+        }
+        .progress-label {
+            font-weight: 400;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 5px; /* Add space between label and bar */
+        }
+        .progress {
+            background: #e6ecf3;
+            height: 10px; /* Smaller bar height */
+            border-radius: 3px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 5px;
+            margin-bottom: 5px; /* Add some space around the bar */
+        }
+        .progress-bar {
+            background: #e8491d;
+            height: 100%;
+            border-radius: 3px;
+            transition: width 1.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .progress-percentage {
+            color: #e8491d;
+            font-size: 16px; /* Adjust font size */
+            font-weight: bold;
+            white-space: nowrap;
+            text-align: right;
+        }
+        .skill-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between; /* Align the label and percentage */
+        }
+    </style>
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color: #e8491d;">Melby</span> Mariam Chandy</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html" class="current">Skills</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Figma</div>
+                        <div class="progress-percentage">95%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Python</div>
+                        <div class="progress-percentage">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Java</div>
+                        <div class="progress-percentage">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Google Cloud</div>
+                        <div class="progress-percentage">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">HTML 5</div>
+                        <div class="progress-percentage">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">C</div>
+                        <div class="progress-percentage">85%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Communication</div>
+                        <div class="progress-percentage">97%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 97%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Creativity</div>
+                        <div class="progress-percentage">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

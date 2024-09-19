@@ -1,0 +1,437 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melby Mariam Chandy - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #35424a;
+            color: #fff;
+            padding: 20px;
+            border-bottom: 3px solid #e8491d;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+            margin-left: 20px;
+        }
+        header a.current {
+            color: #e8491d;
+            font-weight: bold;
+        }
+        #showcase {
+            min-height: 400px;
+            background: url('https://source.unsplash.com/random/1600x900') no-repeat center center/cover;
+            text-align: center;
+            color: #35424a;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 20px;
+        }
+        #showcase h1 {
+            font-size: 55px;
+            margin: 0;
+            color: #e8491d;
+        }
+        #showcase p {
+            font-size: 20px;
+        }
+        .content {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+        .content h2 {
+            text-align: center;
+            color: #35424a;
+            text-transform: uppercase;
+        }
+        .about-section, .gallery, .contact-section {
+            padding: 50px 0;
+        }
+        .about-section {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+        }
+        .about-text, .about-image {
+            flex: 5;
+        }
+        .about-image img {
+            max-width: 70%;
+            border-radius: 5px;
+            align-items: center; 
+            text-align: center;
+        }
+       
+        .social-links {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-links a {
+            margin: 0 15px;
+            color: #35424a;
+            font-size: 24px;
+            text-decoration: none;
+            text-align: center;
+        }
+        .gallery {
+            padding: 50px 0;
+        }
+        .gallery h2 {
+            text-align: center;
+            color: #35424a;
+            text-transform: uppercase;
+        }
+        .gallery-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .gallery img {
+            width: 30%;
+            margin: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .contact-content {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+            padding: 0 20px;
+        }
+        .box {
+            flex: 1;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-control {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .btn {
+            display: inline-block;
+            background-color: #e8491d;
+            color: #fff;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 4px;
+            text-align: center;
+        }
+        .contact-info h3, .contact-info p {
+            margin: 0;
+        }
+        .contact-info {
+            margin-bottom: 15px;
+        }
+        .styled-hr {
+            border: 0;
+            height: 3px;
+            background-color: #e8491d;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #e8491d;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        /* New styles for skills section */
+        .skills {
+            padding: 50px 0 80px;
+        }
+        .skills h2 {
+            font-size: 24px;
+            font-weight: 600;
+            text-transform: uppercase;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #e5ebf2;
+            text-align: center;
+        }
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .col-md-6 {
+            flex: 1;
+            max-width: 50%;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        .progress-container {
+            margin-bottom: 30px;
+        }
+        .progress-label {
+            font-weight: 400;
+            font-size: 16px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .progress {
+            background: #e6ecf3;
+            height: 10px;
+            border-radius: 3px;
+            position: relative;
+            overflow: hidden;
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+        .progress-bar {
+            background: #e8491d;
+            height: 100%;
+            border-radius: 3px;
+            transition: width 1.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+        .progress-percentage {
+            color: #e8491d;
+            font-size: 16px;
+            font-weight: bold;
+            white-space: nowrap;
+            text-align: right;
+        }
+        .skill-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><span style="color: #e8491d;">Melby</span> Mariam Chandy</h1>
+        <nav>
+            <a href="home.html" class="current">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact</a>
+            <a href="signup.html">Sign Up</a>
+        </nav>
+    </header>
+
+    <section id="showcase">
+        <h1>Welcome to My Portfolio</h1>
+        <p>I'm Melby Mariam Chandy, a B.Tech student in Computer Science and Engineering</p>
+    </section>
+    <hr class="styled-hr">
+    <section class="content">
+        <h2>About Me</h2>
+        <div class="about-section">
+            <div class="about-text">
+                <h3>I am a Professional UI/UX Designer and Web Developer.</h3>
+                <p>
+                    Currently, I am pursuing my Btech Degree at St. Joseph's College of Engineering and Technology, Palai.
+                    I am driven by a deep curiosity for understanding the intricate workings of the world around us. Passion for UI/UX Designing and boosting myself to develop my career.
+                </p>
+                <p>
+                    My portfolio showcases my journey of seamlessly merging engineering principles with artistic flair to create functional and aesthetically pleasing designs that solve real-world problems.
+                </p>
+                <div class="contact-info">
+                    <h3>Phone</h3>
+                    <p>8606286255</p>
+                    <h3>Email</h3>
+                    <p>mariammelby@gmail.com</p>
+                    <h3>Website</h3>
+                    <p><a href="https://melby-mariam-portfolio.netlify.app/" target="_blank">melby-mariam-portfolio.netlify.app</a></p>
+                </div>
+            </div>
+            
+            <div class="about-image">
+                <img src="myimg.jpg" alt="Profile Image">
+                <div class="social-links">
+                    <a href="https://github.com/melby-mariam" target="_blank" class="social-icon">
+                        <i class="fab fa-github" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.behance.net/melbymariam" target="_blank" class="social-icon">
+                        <i class="fab fa-behance" aria-hidden="true"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/melby-mariam-chandy-57a4b2234" target="_blank" class="social-icon">
+                        <i class="fab fa-linkedin" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="styled-hr">
+    <!-- New Skills Section -->
+    <section class="skills">
+        <h2>Skills</h2>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Figma</div>
+                        <div class="progress-percentage">95%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 95%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Python</div>
+                        <div class="progress-percentage">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Java</div>
+                        <div class="progress-percentage">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Google Cloud</div>
+                        <div class="progress-percentage">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">HTML 5</div>
+                        <div class="progress-percentage">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">C</div>
+                        <div class="progress-percentage">85%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Communication</div>
+                        <div class="progress-percentage">97%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 97%;"></div>
+                    </div>
+                </div>
+
+                <div class="progress-container">
+                    <div class="skill-wrapper">
+                        <div class="progress-label">Creativity</div>
+                        <div class="progress-percentage">90%</div>
+                    </div>
+                    <div class="progress">
+                        <div class="progress-bar" style="width: 90%;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr class="styled-hr">
+    <section class="gallery">
+        <h2>My Gallery</h2>
+        <div class="gallery-content">
+            <img src="myimg.jpg" alt="profile_image">
+            <!-- Add more images here -->
+        </div>
+        <hr class="styled-hr">
+    </section>
+
+    <section class="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-content">
+            <div class="box">
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="name" placeholder="Name*" name="name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email*" name="email">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject" name="subject">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" rows="8" id="comment" placeholder="Message"></textarea>
+                    </div>
+                    <a class="btn" href="#" role="button">Submit</a>
+                </form>
+            </div>
+            <div class="box">
+                <div class="contact-info">
+                    <h3>Melby Mariam</h3>
+                    <p>UI/UX Designer</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Phone</h3>
+                    <p>8606286255</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Email</h3>
+                    <p>mariammelby@gmail.com</p>
+                </div>
+                <div class="contact-info">
+                    <h3>Website</h3>
+                    <p><a href="https://melby-mariam-portfolio.netlify.app/" target="_blank">melby-mariam-portfolio.netlify.app</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Melby Mariam Chandy. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
+
+
+
+
+
+
+
